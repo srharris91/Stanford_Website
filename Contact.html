@@ -1,14 +1,115 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "srharris@stanford.edu"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['fname'];
+    $subject = "Form submission:" . $Subject;
+    $subject2 = "Copy of your form submission:" . $Subject;
+    $message = $fname . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $fname . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $fname . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!--#include virtual="header.html" -->
- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <div class="w3-row w3-padding-64">
+
+<style>
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+<div class="w3-row w3-padding-64">
     <div class="w3-container">
-      <h1 class="w3-text-teal">Contact Shaun</h1>
-      <h2 class="w3-text-teal">email</h2>
-      <a href="mailto:srharris@stanford.edu?Subject=Hello%20again" target="_top">srharris@stanford.edu</a>
-      <h2 class="w3-text-teal">LinkedIn</h2>
-      <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="shaun-harris-159b2565"><a class="LI-simple-link" href='https://www.linkedin.com/in/shaun-harris-159b2565?trk=profile-badge'>Shaun Harris</a></div>
+        <h1 class="w3-text-teal">Contact Shaun</h1>
+
+        <h2 class="w3-text-teal">email</h2>
+        <a href="mailto:srharris@stanford.edu?Subject=Hello%20again" target="_top">srharris@stanford.edu</a>
+
+        <h2 class="w3-text-teal">LinkedIn</h2>
+        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="shaun-harris-159b2565"><a class="LI-simple-link" href='https://www.linkedin.com/in/shaun-harris-159b2565?trk=profile-badge'>Shaun Harris</a></div>
+
     </div>
 </div>
 
+
+
+
+
+
+
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-container">
+
+        <h2 class="w3-text-teal">Contact</h2>
+        <div class="container">
+            <form action="" method="post">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="email">Your email</label>
+                <input type="text" id="email" name="email" placeholder="YourEmail.stanford.edu">
+
+                <label for="Subject">Subject</label>
+                <select id="Subject" name="Subject">
+                    <option value="Research">Research</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Subject</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </div>
+</div>
 <!--#include virtual="footer.html" -->
 
