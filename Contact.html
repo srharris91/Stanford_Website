@@ -3,10 +3,10 @@ if(isset($_POST['submit'])){
     $to = "srharris@stanford.edu"; // this is your Email address
     $from = $_POST['email']; // this is the senders Email address
     $first_name = $_POST['fname'];
-    $subject = "Form submission:" . $Subject;
-    $subject2 = "Copy of your form submission:" . $Subject;
-    $message = $_POST['fname'] . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $fname . "\n\n" . $_POST['message'];
+    $subject = "Form submission:";
+    $subject2 = "Copy of your form submission:";
+    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
