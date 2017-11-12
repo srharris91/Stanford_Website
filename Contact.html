@@ -1,11 +1,11 @@
 <?php 
 if(isset($_POST['submit'])){
     $to = "srharris@stanford.edu"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
+    $from = $_POST['email']; // this is the senders Email address
     $first_name = $_POST['fname'];
     $subject = "Form submission:" . $Subject;
     $subject2 = "Copy of your form submission:" . $Subject;
-    $message = $fname . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = $_POST['fname'] . " wrote the following:" . "\n\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $fname . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
@@ -55,10 +55,7 @@ input[type=submit]:hover {
 }
 </style>
 
-
-
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
 
 <div class="w3-row w3-padding-64">
     <div class="w3-container">
