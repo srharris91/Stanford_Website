@@ -2,6 +2,7 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
+echo "Mail Not Sent yet. Thank you " . $fname . ", we will contact you shortly.";
 if(isset($_POST['submit'])){
     $to = "srharris@stanford.edu"; // this is your Email address
     $from = $_POST['email']; // this is the senders Email address
