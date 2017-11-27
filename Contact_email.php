@@ -1,6 +1,8 @@
 <html>
 <body>
+Welcome <?php echo $_POST["firstname"]; ?><br>
 Welcome <?php echo $_POST["fname"]; ?><br>
+Welcome <?php echo $_POST["email"]; ?><br>
 <?php 
 error_reporting(-1);
 ini_set('display_errors', 'On');
