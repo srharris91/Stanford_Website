@@ -1,5 +1,5 @@
-<html>
-<body>
+<!--#include virtual="header.html" -->
+
 Welcome <?php echo $_POST["firstname"]; ?><br>
 Welcome <?php echo $_POST["fname"]; ?><br>
 Welcome <?php echo $_POST["email"]; ?><br>
@@ -24,5 +24,5 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 }
 ?>
-</body>
-</html>
+
+<!--#include virtual="footer.html" -->
