@@ -35,27 +35,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a href="Software" class="w3-bar-item w3-button w3-hover-white">Software</a>
     <a href="PreliminaryTestResults" class="w3-bar-item w3-button w3-hover-white">PreliminaryTestResults</a>
     <a href="DesignModifications" class="w3-bar-item w3-button w3-hover-white">DesignModifications</a>
+    <a href="FinalReport" class="w3-bar-item w3-button w3-hover-white">FinalReport</a>
   </div>
 </div>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="index">Home</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="Electrical">Electrical</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="Software">Software</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="PreliminaryTestResults">PreliminaryTestResults</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="DesignModifications">DesignModifications</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
 
 
 
@@ -63,8 +46,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <div class="w3-row w3-padding-64">
     <h1 class="w3-text-teal">Mechanical System</h1>
-    <div class="w3-third w3-container">
-    <p>This is a work in progress </p>
+    <div class="w3-rest">
+        <p> This is a work in progress </p>
     </div>
 </div>
 
@@ -74,31 +57,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- END MAIN -->
 </div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-</script>
 
 </body>
 </html>
