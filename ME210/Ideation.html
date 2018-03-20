@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Design Iterations<i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Ideation.html" class="w3-bar-item w3-button">Ideation,Sketching & Initial prototyping</a>
+            <a href="DesignModifications.html" class="w3-bar-item w3-button">Initial Testing Findings, Design Iterations & Lessons Learnt</a>
+          </div>
+    </div>
+    <a href="FinalReport.html" class="w3-bar-item w3-button w3-hover-white">FinalReport</a>
+    <a href="Team17.html" class="w3-bar-item w3-button w3-hover-white">Team COWSHOTS</a>
+  </div>
+</div>
+
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+<h1>
+
+  <font size="4"><center> Ideation Story : Team COWSHOTS</center> </font>
+</h1>
+</div>
+<div class = "w3-main" style = "margin:10px 100px">
+<p>
+If you had gone through the project brief, you would have realised that the brief contained fair bit of Silicon Valley flair. When we first met,
+our objective was to figure out what is required and what is optional and gain clarity on Minimum Performance Requirements. We decided to try and focus on
+the optional competitive section after getting checked off, based on the amount of time we have at that instant.
+</p>
+
+<p> We realised that the robot must have the capability to do four basic tasks to meet the performance requirements. </p>
+<p> 1. Capability to move forward, backward and take turns </p>
+<p> 2. Capability to move along a black taped line </p>
+<p> 3. Capability to sense gray lines </p>
+<p> 4. Capability to drop balls at a specified locations (one ball per every drop) </p>
+
+<p> <u> 1. Design inspiration to move forward,backward and take turns </u> <br>
+  We decided to think out of the box and came up with several ideas to create a robot that has the capability to move forward, backward and take turns. We thought of
+  using wheels coupled with DC motors, humanoid robot systems,robotic systems that can crawl. Among all the ideas, we felt using wheels coupled with DC motors
+  idea had low risk of failure and is easy with respect to design and fabrication. So, we decided to go with that system. </p>
+
+
+<p> <u> 2. Design inspiration to move along a line </u> <br>
+As part of ME 210, we did some laboratory assignments. We came across 'Sparki System' in one of the assignments. It had some IR sensors on its base.
+We took inspiration from the Sparki System. IR sensors have a photo diode and an NPN photo-transistor. The light emitted at an angle by the photo diode collides with
+the ground surface. If it hits a white surface, the light is more likely to be reflected and if it hits a black surface, it is more likely to be absorbed. The reflected light
+is sensed by the photo transistor. The amount of current that flows through the photo transistor is dependent on the amount of light it receives. The current signal
+can be converted into a voltage signal of desired range by allowing it to flow through a resistor and measuring potential across it.   </p>
+
+<p> <u> 3. Design inspiration to sense gray lines </u> <br>
+The IR sensors mentioned above give analog signals. The amount of light that gets reflected when light is incident on a white surface, black surface and gray surface is different.
+We felt we should be able to distinguish between white, black and gray if we designed the circuit mentioned above currectly </p>
+
+<p> <u> 4. Design inspiration to drop one ball per drop</u> <br>
+Again, we decided to think out of the box. We came out with several ideas. We thought of shooting the balls directly from the base location, using a linear actuator and a Slide
+to drop one ball at one time. Shooting the balls directly seemed risky. We were not sure if we will have sufficient control to ensure we only drop one ball
+if we use a linear actuator and a slide system. <br>
+
+We remembered a story from the ipod days. Ipod created a revolution in the music industry. When the the first ipod emerged (before the touch screen era), an interesting problem emerged.
+Scrolling down from song one to song sixty four is not fun. They had to come up with a better way of moving from one song to another song quickly and thus
+the famous ipod wheel came into the market. <br>
+
+We took inspiration from the ipod wheel. We decided to use a slotted wheel, turn in by stepper motor to drop one ball at one instant. We believed that the risks
+associated with the design are low and hence chose it.
+ </p>
+
+ <p>
+Based on the ideation phase, we made initial sketches and quickly made Solidworks drawings. We decided to prototype using duron, pink foam and metal fasteners.
+We decided to use 3D printing for shapes that required complex geometry. Duron can be formed into the desired shape using laser cutting facility available in the lab.
+Pink foam cutting machine is also available in Room 36 (Stanford's product realisation lab). As far as the electrical circuits are concerned, we decided to
+make detailed designs. We also decided to make a state space diagram once we have some base mechanical system. </p>
+</body>
+</div>
+</html>

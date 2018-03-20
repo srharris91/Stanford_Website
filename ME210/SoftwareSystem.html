@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Design Iterations<i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Ideation.html" class="w3-bar-item w3-button">Ideation,Sketching & Initial prototyping</a>
+            <a href="DesignModifications.html" class="w3-bar-item w3-button">Initial Testing Findings, Design Iterations & Lessons Learnt</a>
+          </div>
+    </div>
+    <a href="FinalReport.html" class="w3-bar-item w3-button w3-hover-white">FinalReport</a>
+    <a href="Team17.html" class="w3-bar-item w3-button w3-hover-white">Team COWSHOTS</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="TeamPicture.jpg" /alt = "AAA" style="width:100%">
+
+  </div>
+</div>
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+    <img src="SSD_210.pdf" / alt="Picture of Team" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+      </div>
+</div>
+<div class = "w3-main" style = "margin:10px 100px">
+<body>
+<p>
+  A state space diagram was made based on the description given in the problem statemend and the discussions we have had to solve the problem statement.
+  We created '.h' files to create modules and write the functions required to implement the state space diagram. The final state space diagram
+  was implemented in the '.ino' files. The code has been included in the final report. </p>
+
+  <p> All the modules and the .ino code can be downloaded from the git hub repository. Please feel free to use them if you want to build your own cool robots.
+    As Tom Kenny says, it is a joy to see our designs being replicated by others </p>
+    <p> As far as the control system for the drive assembly is concerned, we decided to use PID control system. We used the difference between the tape sensor values as the error
+      and tried to determine the Kp Ki Kd values empirically. </p>
+
+  <a href = "https://github.com/srharris91/ME210_CowShots.git"> The GITHUB repository can be found here </a>
+
+
+</body>
+</div>
+</html>

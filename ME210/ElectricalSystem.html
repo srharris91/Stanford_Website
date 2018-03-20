@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<!-- Navbar -->
+<<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Design Iterations<i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Ideation.html" class="w3-bar-item w3-button">Ideation,Sketching & Initial prototyping</a>
+            <a href="DesignModifications.html" class="w3-bar-item w3-button">Initial Testing Findings, Design Iterations & Lessons Learnt</a>
+          </div>
+    </div>
+    <a href="FinalReport.html" class="w3-bar-item w3-button w3-hover-white">FinalReport</a>
+    <a href="Team17.html" class="w3-bar-item w3-button w3-hover-white">Team COWSHOTS</a>
+  </div>
+</div>
+
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+<h1>
+
+  <font size="4"><center> Electrical System Design </center> </font>
+</h1>
+
+<p>
+We decided to use Teensy micro controller.  The electrical system had 3 main sub assemblies <br>
+1. Analog input from tape sensing and communication to Teensy <br>
+2. PWM control of DC motors using Teensy and motor drivers <br>
+3. Control of stepper motor using Teensy and stepper motor driver </p>
+
+<p> A maximum of 3.3 V is supplied to the tape sensing sensor. The resistor to the diodes were chosen to ensure that the diode receives a maximum of
+  less than 40 mA as mentioned in the data sheets. The maximum voltage recorded across the transistor output and ground will be less than 3.3V and hence will be
+compatible with the teensy system. The schematic can be found in the final report. </p>
+
+<p> Motors were chosen such that the maximum torque provided by the motors is greater than the static friction resistance based torque the system will choose.
+  Further, during the selection of motors, we also tried to ensure that the motor provides torque greater than the required torque at the desired speed at 12V.
+  For PWM control of motors, a 12 V constant voltage is supplied to the motors using batteries connected in series and a linear voltage regulator.
+  L 293 driver was chosen to drive the motors. Compatability between Teensy and L293 was checked (VIH,VOH, VIL, VOL, IOH, IOL considerations); the detailed
+  workings can be found in the final report. </p>
+
+  <p> DRV 8825 was chosen to drive the stepper motor. We did not look into the torque considerations for the stepper motor since the amount of torque
+    required is very small and intuitively we strongly believed analytical analysis is not required. Compatability between DRV 8825 and Teensy was checked.
+    The detailed workings can be found in the final report </p>
+</p>
+</body>
+</html>
