@@ -1,13 +1,10 @@
-<!--#include virtual="header.html" -->
+<html>
+<body>
+
 
 Welcome <?php echo $_POST["firstname"]; ?><br>
 Welcome <?php echo $_POST["fname"]; ?><br>
 Welcome <?php echo $_POST["email"]; ?><br>
-<?php
-$color='red';
-$car='BMW';
-echo "I have a $color $car";
-?>
 <?php 
 error_reporting(-1);
 ini_set('display_errors', 'On');
@@ -30,4 +27,5 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<!--#include virtual="footer.html" -->
+</body>
+</html>
