@@ -29,10 +29,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class="w3-top">
             <div class="w3-bar w3-theme w3-card w3-large">
                 <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-                <a href="index" class="w3-bar-item w3-button w3-theme-l1"><i class="fa fa-home"></i></a>
-                <a href="Contact" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-envelope"></i></a>
-                <a href="News" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-newspaper-o"></i></a>
-                <a href="CV" class="w3-bar-item w3-button w3-hover-white">CV</a>
+                <a href="index" class="w3-bar-item w3-button w3-theme-l1" title="Home"><i class="fa fa-home"></i></a>
+                <a href="Contact" class="w3-bar-item w3-button w3-hover-white" title="Contact"><i class="fa fa-envelope"></i></a>
+                <a href="News" class="w3-bar-item w3-button w3-hover-white" title="News"><i class="fa fa-newspaper-o"></i></a>
+                <a href="SHarris_CV.pdf" class="w3-bar-item w3-button w3-hover-white" title="Curriculum Vitae">CV</a>
                 <!--<a href="ME210/index" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ME210 Mechatronics<i class="fa fa-car"></i></a>-->
                 <!--<div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
                     <button class="w3-button">More<i class="fa fa-caret-down"></i></button>
@@ -56,10 +56,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
                 <i class="fa fa-remove"></i>
             </a>
             <h4 class="w3-bar-item"><b>Menu</b></h4>
-            <a class="w3-bar-item w3-button w3-hover-black" href="index"><i class="fa fa-home"></i> Home</a>
-            <a class="w3-bar-item w3-button w3-hover-black" href="Contact"><i class="fa fa-envelope"></i> Contact</a>
-            <a class="w3-bar-item w3-button w3-hover-black" href="News"><i class="fa fa-newspaper-o"></i> News</a>
-            <a class="w3-bar-item w3-button w3-hover-black" href="CV">Curriculum Vitae</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="index" title="Home"><i class="fa fa-home"></i> Home</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="Contact" title="Contact"><i class="fa fa-envelope"></i> Contact</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="News" title="News"><i class="fa fa-newspaper-o"></i> News</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Curriculum Vitae<i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a class="w3-bar-item w3-button" href="CV" title="Curriculum Vitae"><i class="fa fa-file-o"></i> Curriculum Vitae</a>
+                    <a class="w3-bar-item w3-button" href="SHarris_CV.pdf" title="Curriculum Vitae"><i class="fa fa-file-pdf-o"></i> Curriculum Vitae</a>
+                </div>
+            </div>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">More<i class="fa fa-caret-down"></i></button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
